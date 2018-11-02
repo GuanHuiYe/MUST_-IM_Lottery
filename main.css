@@ -36,7 +36,6 @@ table td * {
 }
 
 .main {
-  overflow-y: scroll;
   width: 35%;
   min-width: 600px;
   max-height: 80%;

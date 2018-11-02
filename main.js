@@ -21,7 +21,7 @@ $(document).ready(function() {
     var btnswitch = false;
     var lotter
     $("#btn_Start").click(function() {
-        if ($("#min").val() === "" || $("#max").val() === "" || parseInt($('#min').val()).toString() === "NaN" || parseInt($('#max').val()).toString() === "NaN") {
+        if ($("#min").val() === "" || $("#max").val() === "" ) {
             $(".meesage-box").css("display", "block");
             $("#meesage").text("數字沒有打歐!");
             $("#min").addClass("shadow");
