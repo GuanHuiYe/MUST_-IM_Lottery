@@ -9,10 +9,11 @@ $font-big: 20px;
 $font-mid: 16px;
 $font-smll: 12px;
 $font-ss: 6px;
+
 * {
   font-family: 微軟正黑體;
   position: relative;
-  transition-duration: 0.2s; //動畫運作時間
+  transition-duration: 0.5s;
   vertical-align: top;
   //degug
   // border: black 1px solid;
@@ -46,13 +47,12 @@ table {
 .main {
   width: 35%;
   min-width: 600px;
-
   background-color: $color-grey;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   color: $color-white;
   padding: 20px;
+
   h1 {
     text-align: center;
     margin: 0px 0px;
@@ -86,7 +86,9 @@ table {
     display: none;
     padding: 5px;
     #meesage {
-      color: brown;
+      font-size: 25px;
+      font-weight: bold;
+      color: red;
     }
   }
   .btn_Start {

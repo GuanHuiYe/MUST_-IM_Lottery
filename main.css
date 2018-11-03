@@ -2,8 +2,8 @@
 * {
   font-family: 微軟正黑體;
   position: relative;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   vertical-align: top;
 }
 
@@ -40,9 +40,8 @@ table td * {
   min-width: 600px;
   background-color: #5c5757;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   color: #efecec;
   padding: 20px;
 }
@@ -84,7 +83,9 @@ table td * {
 }
 
 .main .meesage-box #meesage {
-  color: brown;
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
 }
 
 .main .btn_Start {

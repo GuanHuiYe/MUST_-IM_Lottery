@@ -3,89 +3,53 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta
-        http-equiv="X-UA-Compatible"
-        content="IE=edge"
-    >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>明新科技大學 資管系 抽獎系統</title>
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="jquery-3.3.1.min.js"></script>
     <!-- 匯入Vue.js -->
     <script src="vue.js"></script>
 
 
 
-    <link
-        rel="stylesheet"
-        type="text/css"
-        media="screen"
-        href="main.css"
-    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 
 
 </head>
 
 <body>
-    <div
-        id="app"
-        class="main"
-    >
-        <h1>明新科技大學 資管系 抽獎系統</h1>
+    <div id="app" class="main">
+        <h1>MUST IM 抽獎系統</h1>
         <br>
         <table>
             <tr>
                 <td class="main-left">
-                    <table class="table">
-                        <tr>
-                            <td>最小值<br><input
-                                    id="min"
-                                    type="number"
-                                    value=""
-                                ></td>
-                            <td>最大值<br><input
-                                    id="max"
-                                    type="number"
-                                    value=""
-                                ></td>
-                        </tr>
-                    </table>
 
                     <div class="meesage-box">
                         <label id="meesage"></label>
                     </div>
-
-
-                    <div
-                        id="btn_Start"
-                        class="btn_Start"
-                    >開抽</div>
-
+                    <table class="table">
+                        <tr>
+                            <td>最小值<br><input id="min" type="number" value=""></td>
+                            <td>最大值<br><input id="max" type="number" value=""></td>
+                        </tr>
+                    </table>
+                    <div id="btn_Start" class="btn_Start">開抽</div>
                     <br>
                     <div class="go">
                         <h1 id=num>0</h1>
                     </div>
                 </td>
                 <td class="list-box">
-                    <h3>抽獎清單</h3>
-                    <div
-                        class="list"
-                        v-for="(list,id) in list"
-                    >
+                    <h3>抽中號碼清單</h3>
+                    <div class="list" v-for="(list,id) in list">
                         <div class="numname">{{id+1}}.&nbsp&nbsp{{list}}</div>
                         <button v-on:click="remove(id)">X</button>
                     </div>
                 </td>
             </tr>
         </table>
-
-
-
-
-
     </div>
 </body>
 
